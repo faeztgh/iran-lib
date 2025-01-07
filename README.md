@@ -36,6 +36,10 @@ pnpm add iran-lib
   - Get information about Iranian banks, including bank prefixes and names.
   - Lookup bank names by prefixes or prefixes by bank names.
 
+- **National ID**
+  - Get city and province information based on national ID prefixes.
+  - Retrieve city names by prefixes and vice versa.
+
 - **More to Come!**
   - This library is designed to expand with additional Iran-related utilities and datasets in the future.
 
@@ -43,9 +47,39 @@ pnpm add iran-lib
 
 ## Usage
 
+### National ID
+
+#### Using the Hook
+
+```tsx
+import { useNationalIdData } from "iran-lib-extended";
+
+const { specificCityByPrefix } = useNationalIdData({
+    getCityByPrefix: "169",
+});
+
+console.log(specificCityByPrefix); // { prefix: "169", city: "آذرشهر" }
+```
+
+#### Using the Class
+
+```tsx
+import { NationalId } from "iran-lib-extended";
+
+const nationalIdInstance = new NationalId();
+
+const city = nationalIdInstance.getCityByPrefix("169");
+const prefix = nationalIdInstance.getPrefixByCity("آذرشهر");
+
+console.log(city); // { prefix: "169", city: "آذرشهر" }
+console.log(prefix); // "169"
+
+```
+
 ### Provinces and Cities
 
 #### Using the Hook
+
 ```tsx
 import { useIranProvincesAndCities } from "iran-lib";
 
@@ -58,6 +92,7 @@ console.log(specificProvinceCities); // Cities in Tehran province
 ```
 
 #### Using the Class
+
 ```ts
 import { Provinces } from "iran-lib";
 
@@ -75,6 +110,7 @@ console.log(provinceOfCity);
 ### Bank Information
 
 #### Using the Hook
+
 ```tsx
 import { useBankData } from "iran-lib";
 
@@ -86,6 +122,7 @@ console.log(specificBankByPrefix); // { prefix: "603799", bankName: "\u0645\u064
 ```
 
 #### Using the Class
+
 ```ts
 import { Banks } from "iran-lib";
 
@@ -106,6 +143,7 @@ console.log(prefix);
 
 - **Province and City Data**: Comprehensive dataset of Iranian provinces and their respective cities.
 - **Bank Data**: List of Iranian banks and their prefixes.
+- **National ID Data**: Data for Iranian national ID prefixes and related cities/provinces.
 
 ---
 
@@ -123,9 +161,6 @@ This project is licensed under the [MIT License](./LICENSE).
 
 ## Future Plans
 
-- Adding support for postal codes and area codes.
-- Utilities for national ID validation.
-- Currency converters and date formatters for Iran.
 - More datasets related to Iran's infrastructure and culture.
 
 ---
@@ -133,4 +168,3 @@ This project is licensed under the [MIT License](./LICENSE).
 ## Support
 
 If you encounter any issues or have questions, feel free to open an issue on [GitHub](https://github.com/your-repo-link).
-

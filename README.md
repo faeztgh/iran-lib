@@ -1,4 +1,6 @@
-# Iran-Lib
+# Iran-Lib [![npm version](https://badge.fury.io/js/iran-lib.svg)](https://badge.fury.io/js/iran-lib)  [Github](https://github.com/faeztgh/iran-lib)
+
+## Description
 
 `iran-lib` is a TypeScript library providing a collection of utilities, data, and functionality related to Iran. It includes helpful modules for handling provinces and cities, bank information, and other general-purpose utilities for projects related to Iran.
 

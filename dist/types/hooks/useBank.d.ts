@@ -4,7 +4,7 @@ interface IUseBankData {
 }
 declare const useBank: (props: IUseBankData) => {
     data: import("../types/bank").TBank[];
-    specificBankByPrefix: import("../types/bank").TBank | null;
-    specificPrefixByBankName: import("../types/bank").TBank | null;
+    specificBankByPrefix: any;
+    specificPrefixByBankName: any;
 };
 export default useBank;

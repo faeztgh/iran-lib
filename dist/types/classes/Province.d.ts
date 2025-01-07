@@ -1,4 +1,4 @@
-import { TProvinceAndCity } from "../data/province-and-cities";
+import { TProvinceAndCity } from "../types/province";
 declare class Provinces {
     private provinces;
     constructor(provinces: TProvinceAndCity[]);

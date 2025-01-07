@@ -1,9 +1,3 @@
-export type TProvinceAndCity = {
-    id: number;
-    provinceName: string;
-    englishName: string;
-    capital: string;
-    cities: string[];
-};
+import { TProvinceAndCity } from "../../types/province";
 declare const iranProvincesAndCities: Array<TProvinceAndCity>;
 export default iranProvincesAndCities;

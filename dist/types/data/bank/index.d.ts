@@ -1,6 +1,3 @@
-export type TBank = {
-    prefix: string;
-    bankName: string;
-};
+import { TBank } from "../../types/bank";
 declare const bankData: Array<TBank>;
 export default bankData;

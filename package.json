@@ -4,6 +4,7 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
+    "publish":"build && npm publish --access public",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

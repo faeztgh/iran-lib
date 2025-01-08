@@ -1,4 +1,4 @@
-# Iran-Lib [![npm version](https://badge.fury.io/js/iran-lib.svg)](https://badge.fury.io/js/iran-lib)  [Github](https://github.com/faeztgh/iran-lib)
+# Iran-Lib   [Github](https://github.com/faeztgh/iran-lib) [![npm version](https://badge.fury.io/js/iran-lib.svg)](https://badge.fury.io/js/iran-lib)
 
 ## Description
 

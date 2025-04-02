@@ -1,9 +1,4 @@
-"use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-const bank_1 = __importDefault(require("../data/bank"));
+import bankData from "../data/bank";
 class Banks {
     constructor(banks) {
         this.banks = banks;
@@ -22,5 +17,5 @@ class Banks {
         return bank ? bank.prefix : undefined;
     }
 }
-const banksInstance = new Banks(bank_1.default);
-exports.default = banksInstance;
+const banksInstance = new Banks(bankData);
+export default banksInstance;

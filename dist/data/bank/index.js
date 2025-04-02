@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 const bankData = [
     { prefix: "603799", bankName: "ملی " },
     { prefix: "603769", bankName: "صادرات" },
@@ -29,4 +27,4 @@ const bankData = [
     { prefix: "636214", bankName: "آینده" },
     { prefix: "505809", bankName: "خاورمیانه" },
 ];
-exports.default = bankData;
+export default bankData;

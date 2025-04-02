@@ -1,9 +1,4 @@
-"use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-const province_and_cities_1 = __importDefault(require("../data/province-and-cities"));
+import iranProvincesAndCities from "../data/province-and-cities";
 class Provinces {
     constructor(provinces) {
         this.provinces = provinces;
@@ -26,5 +21,5 @@ class Provinces {
         return province;
     }
 }
-const provincesInstance = new Provinces(province_and_cities_1.default);
-exports.default = provincesInstance;
+const provincesInstance = new Provinces(iranProvincesAndCities);
+export default provincesInstance;

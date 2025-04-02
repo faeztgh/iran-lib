@@ -1,9 +1,4 @@
-"use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-const national_id_1 = __importDefault(require("../data/national-id"));
+import nationalIdData from "../data/national-id";
 class NationalId {
     constructor(nationalIdData) {
         this.nationalIdData = nationalIdData;
@@ -31,5 +26,5 @@ class NationalId {
         return undefined;
     }
 }
-const nationalIdInstance = new NationalId(national_id_1.default);
-exports.default = nationalIdInstance;
+const nationalIdInstance = new NationalId(nationalIdData);
+export default nationalIdInstance;

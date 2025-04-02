@@ -1,1 +1,0 @@
-{"version":3,"file":"national-id.d.ts","sourceRoot":"","sources":["../../src/types/national-id.ts"],"names":[],"mappings":"AAAA,MAAM,WAAW,KAAK;IAClB,MAAM,EAAE,MAAM,CAAC;IACf,IAAI,EAAE,MAAM,CAAC;CAChB;AAED,MAAM,WAAW,SAAS;IACtB,QAAQ,EAAE,MAAM,CAAC;IACjB,MAAM,EAAE,KAAK,EAAE,CAAC;CACnB"}

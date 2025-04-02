@@ -1,4 +1,4 @@
-var iranProvincesAndCities = [
+const iranProvincesAndCities = [
     {
         id: 1,
         provinceName: "آذربایجان شرقی",

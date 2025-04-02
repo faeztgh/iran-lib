@@ -1,4 +1,4 @@
-var nationalIdData = [
+const nationalIdData = [
     {
         province: "آذربایجان شرقی",
         cities: [

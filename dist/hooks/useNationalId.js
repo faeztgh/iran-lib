@@ -1,23 +1,23 @@
 import nationalIdData from "../data/national-id";
-var useNationalId = function (props) {
-    var getCityByPrefix = props.getCityByPrefix, getPrefixByCity = props.getPrefixByCity;
-    var specificCityByPrefix, specificPrefixByCity;
+const useNationalId = (props) => {
+    const { getCityByPrefix, getPrefixByCity } = props;
+    let specificCityByPrefix, specificPrefixByCity;
     if (getCityByPrefix) {
-        nationalIdData.some(function (province) {
-            specificCityByPrefix = province.cities.find(function (city) { return city.prefix === getCityByPrefix; });
+        nationalIdData.some((province) => {
+            specificCityByPrefix = province.cities.find((city) => city.prefix === getCityByPrefix);
             return specificCityByPrefix;
         });
     }
     if (getPrefixByCity) {
-        nationalIdData.some(function (province) {
-            specificPrefixByCity = province.cities.find(function (city) { return city.city === getPrefixByCity; });
+        nationalIdData.some((province) => {
+            specificPrefixByCity = province.cities.find((city) => city.city === getPrefixByCity);
             return specificPrefixByCity;
         });
     }
     return {
         data: nationalIdData,
-        specificCityByPrefix: specificCityByPrefix !== null && specificCityByPrefix !== void 0 ? specificCityByPrefix : null,
-        specificPrefixByCity: specificPrefixByCity !== null && specificPrefixByCity !== void 0 ? specificPrefixByCity : null,
+        specificCityByPrefix: specificCityByPrefix ?? null,
+        specificPrefixByCity: specificPrefixByCity ?? null,
     };
 };
 export default useNationalId;

@@ -1,15 +1,15 @@
 {
   "name": "iran-lib",
+  "description": "A TypeScript library providing utilities and data related to Iran.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "version": "1.0.9",
-  "description": "A TypeScript library providing utilities and data related to Iran.",
-  "module": "dist/index.mjs",
+  "module": "dist/index.js",
   "author": "Faez Tgh",
   "license": "ISC",
   "type": "module",
   "exports": {
-    "import": "./dist/index.mjs",
+    "import": "./dist/index.js",
     "require": "./dist/index.js",
     "types": "./dist/index.d.ts"
   },
@@ -57,7 +57,6 @@
     "داده‌های ایرانی",
     "استان و شهرهای ایران"
   ],
-  
   "devDependencies": {
     "typescript": "^5.0.0"
   },

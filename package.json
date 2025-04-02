@@ -4,6 +4,21 @@
   "types": "dist/index.d.ts",
   "version": "1.0.9",
   "description": "A TypeScript library providing utilities and data related to Iran.",
+  "module": "dist/index.mjs",
+  "author": "Faez Tgh",
+  "license": "ISC",
+  "type": "module",
+  "exports": {
+    "import": "./dist/index.mjs",
+    "require": "./dist/index.js",
+    "types": "./dist/index.d.ts"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "publish": "npm publish --access public",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "keywords": [
     "iran",
     "iran-lib",
@@ -42,18 +57,9 @@
     "داده‌های ایرانی",
     "استان و شهرهای ایران"
   ],
-  "scripts": {
-    "build": "tsc",
-    "prepublishOnly": "npm run build",
-    "publish": "npm publish --access public",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Faez Tgh",
-  "license": "ISC",
-  "type": "commonjs",
-  "dependencies": {
-    "@types/node": "^22.10.5",
-    "typescript": "^5.7.2"
+  
+  "devDependencies": {
+    "typescript": "^5.0.0"
   },
   "files": [
     "dist"

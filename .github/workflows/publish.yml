@@ -31,7 +31,7 @@ jobs:
               run: |
                   # Automatically bump the version
                   npm version patch -m "Bump version to %s"  # Change to 'minor' or 'major' as needed
-                  git push --follow-tags
+                  git push --follow-tags https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/${{ github.repository }}.git
 
             - name: Build package
               run: npm run build

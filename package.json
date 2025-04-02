@@ -1,8 +1,8 @@
 {
   "name": "iran-lib",
-  "main": "dist/index.js",                     
-  "types": "dist/index.d.ts",                    
-  "version": "1.0.8",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "version": "1.0.9",
   "description": "A TypeScript library providing utilities and data related to Iran.",
   "keywords": [
     "iran",
@@ -43,9 +43,9 @@
     "استان و شهرهای ایران"
   ],
   "scripts": {
-    "build": "tsc",                             
-    "prepublishOnly": "npm run build",          
-    "publish": "npm publish --access public",    
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "publish": "npm publish --access public",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Faez Tgh",
@@ -56,6 +56,6 @@
     "typescript": "^5.7.2"
   },
   "files": [
-    "dist"                                     
+    "dist"
   ]
 }

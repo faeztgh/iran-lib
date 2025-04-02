@@ -1,9 +1,9 @@
 {
   "name": "iran-lib",
   "description": "A TypeScript library providing utilities and data related to Iran.",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "module": "dist/index.js",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "version": "1.0.14",
   "author": "Faez Tgh",
   "license": "ISC",

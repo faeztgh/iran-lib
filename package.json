@@ -1,8 +1,8 @@
 {
   "name": "iran-lib",
-  "version": "1.0.7",
   "main": "dist/index.js",                     
   "types": "dist/index.d.ts",                    
+  "version": "1.0.8",
   "description": "A TypeScript library providing utilities and data related to Iran.",
   "keywords": [
     "iran",

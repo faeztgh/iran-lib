@@ -1,11 +1,10 @@
 {
   "name": "iran-lib",
   "description": "A TypeScript library providing utilities and data related to Iran.",
-  "main": "./dist/index.cjs",
-  "module": "./dist/index.js",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "version": "1.0.18",
-  "author": "Faez Tgh",
   "license": "MIT",
   "type": "module",
   "exports": {
@@ -13,8 +12,17 @@
     "require": "./dist/index.js",
     "types": "./dist/index.d.ts"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/faeztgh/iran-lib.git"
+  },
+  "author": {
+    "name": "Faez Tgh",
+    "email": "work.faeztgh@gmail.com",
+    "url": "https://www.faez.pro"
+  },
   "scripts": {
-    "build": "rm -rf dist && tsc",
+    "build": "rm -rf dist && tsup",
     "prepublishOnly": "npm run build",
     "publish": "npm publish --access public"
   },
@@ -57,6 +65,7 @@
     "استان و شهرهای ایران"
   ],
   "devDependencies": {
+    "tsup": "^8.4.0",
     "typescript": "^5.0.0"
   },
   "files": [

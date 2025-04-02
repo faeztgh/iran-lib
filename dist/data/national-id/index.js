@@ -1,3 +1,5 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 const nationalIdData = [
     {
         province: "آذربایجان شرقی",
@@ -2057,4 +2059,4 @@ const nationalIdData = [
         ],
     },
 ];
-export default nationalIdData;
+exports.default = nationalIdData;

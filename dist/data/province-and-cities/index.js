@@ -1,3 +1,5 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 const iranProvincesAndCities = [
     {
         id: 1,
@@ -571,4 +573,4 @@ const iranProvincesAndCities = [
         ],
     },
 ];
-export default iranProvincesAndCities;
+exports.default = iranProvincesAndCities;

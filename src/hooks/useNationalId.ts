@@ -1,4 +1,4 @@
-import nationalIdData from "../data/national-id";
+import nationalIdData from "../data/national-id/index.js";
 
 interface IUseNationalIdData {
     getCityByPrefix?: string;

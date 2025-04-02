@@ -3,8 +3,8 @@ interface IUseIranProvincesAndCities {
     getProvinceByCityName?: string;
 }
 declare const useIranProvincesAndCities: (props: IUseIranProvincesAndCities) => {
-    data: import("../types/province").TProvinceAndCity[];
-    specificProvinceCities: import("../types/province").TProvinceAndCity[] | null;
-    specificCityOfProvince: import("../types/province").TProvinceAndCity[] | null;
+    data: import("../types/province.js").TProvinceAndCity[];
+    specificProvinceCities: import("../types/province.js").TProvinceAndCity[] | null;
+    specificCityOfProvince: import("../types/province.js").TProvinceAndCity[] | null;
 };
 export default useIranProvincesAndCities;

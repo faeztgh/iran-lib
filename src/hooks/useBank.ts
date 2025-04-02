@@ -1,4 +1,4 @@
-import bankData from "../data/bank";
+import bankData from "../data/bank/index";
 
 interface IUseBankData {
     getBankByPrefix?: string;
@@ -12,13 +12,13 @@ const useBank = (props: IUseBankData) => {
 
     if (getBankByPrefix) {
         specificBankByPrefix = bankData.find(
-            (bank) => bank.prefix === getBankByPrefix
+            (bank: { prefix: string; }) => bank.prefix === getBankByPrefix
         );
     }
 
     if (getPrefixByBankName) {
         specificPrefixByBankName = bankData.find(
-            (bank) => bank.bankName === getPrefixByBankName
+            (bank: { bankName: string; }) => bank.bankName === getPrefixByBankName
         );
     }
 

@@ -1,4 +1,4 @@
-import provinceAndCitiesData from "../data/province-and-cities";
+import provinceAndCitiesData from "../data/province-and-cities/index.js";
 
 interface IUseIranProvincesAndCities {
     getCitiesByProvinceName?: string;
@@ -9,13 +9,13 @@ const useIranProvincesAndCities = (props: IUseIranProvincesAndCities) => {
     let specificProvinceCities, specificCityOfProvince;
     if (getCitiesByProvinceName) {
         specificProvinceCities = provinceAndCitiesData.filter(
-            (provinceAndCity) =>
+            (provinceAndCity: { provinceName: string }) =>
                 provinceAndCity.provinceName === getCitiesByProvinceName
         );
     }
     if (getProvinceByCityName) {
         specificCityOfProvince = provinceAndCitiesData.filter(
-            (provinceAndCity) =>
+            (provinceAndCity: { cities: string[] }) =>
                 provinceAndCity.cities.includes(getProvinceByCityName)
         );
     }

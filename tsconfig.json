@@ -1,19 +1,21 @@
 {
-    "compilerOptions": {
-      "target": "ES5",
-      "module": "ESNext",
-      "moduleResolution": "node",
-      "outDir": "./dist",
-      "declaration": true,
-      "declarationDir": "./dist/types",
-      "esModuleInterop": true,
-      "skipLibCheck": true,
-      "strict": true
-    },
+  "compilerOptions": {
+    "target": "ES5",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "outDir": "dist",                          
+    "declaration": true,                        
+    "declarationDir": "./dist/types",           
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "allowJs": false,                          
+    "resolveJsonModule": true,                 
+    "baseUrl": ".",                             
     "paths": {
-        "@/*": ["src/*"]
-    },
-    "include": ["src/**/*"],
-    "exclude": ["node_modules/**"]
-  }
-  
+      "@/*": ["src/*"]                         
+    }
+  },
+  "include": ["src/**/*"],                       
+  "exclude": ["node_modules", "dist"]            
+}

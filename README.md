@@ -1,4 +1,4 @@
-# Iran-Lib   [Github](https://github.com/faeztgh/iran-lib) [![npm version](https://badge.fury.io/js/iran-lib.svg)](https://badge.fury.io/js/iran-lib)
+# Iran-Lib   [Github](https://github.com/faeztgh/iran-lib) [![npm version](https://badge.fury.io/js/iran-lib.svg)](https://badge.fury.io/js/iran-lib) [![Star on GitHub](https://img.shields.io/badge/⭐-Star%20on%20GitHub-blue?style=flat&logo=github)](https://github.com/faeztgh/iran-lib)
 
 ## Description
 
@@ -169,4 +169,4 @@ This project is licensed under the [MIT License](./LICENSE).
 
 ## Support
 
-If you encounter any issues or have questions, feel free to open an issue on [GitHub](https://github.com/your-repo-link).
+If you encounter any issues or have questions, feel free to open an issue on [GitHub](https://github.com/faeztgh/iran-lib).

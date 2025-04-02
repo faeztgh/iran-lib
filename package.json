@@ -2,7 +2,7 @@
   "name": "iran-lib",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "A TypeScript library providing utilities and data related to Iran.",
   "module": "dist/index.mjs",
   "author": "Faez Tgh",
@@ -57,7 +57,6 @@
     "داده‌های ایرانی",
     "استان و شهرهای ایران"
   ],
-  
   "devDependencies": {
     "typescript": "^5.0.0"
   },

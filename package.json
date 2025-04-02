@@ -1,10 +1,10 @@
 {
   "name": "iran-lib",
   "description": "A TypeScript library providing utilities and data related to Iran.",
+  "types": "./dist/index.d.ts",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
-  "types": "./dist/index.d.ts",
-  "version": "1.0.18",
+  "version": "1.0.20",
   "license": "MIT",
   "type": "module",
   "exports": {

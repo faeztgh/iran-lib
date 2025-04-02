@@ -46,7 +46,7 @@
     "publish": "npm publish --access public",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Faez Tgh",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {

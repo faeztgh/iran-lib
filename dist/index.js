@@ -32,6 +32,9 @@ var __importStar = (this && this.__importStar) || (function () {
         return result;
     };
 })();
+var __exportStar = (this && this.__exportStar) || function(m, exports) {
+    for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.useIranProvincesAndCities = exports.useNationalId = exports.useBank = exports.iranProvincesAndCities = exports.nationalId = exports.bank = exports.Provinces = exports.NationalId = exports.Banks = void 0;
 exports.Banks = __importStar(require("./classes/Bank.js"));
@@ -43,3 +46,12 @@ exports.iranProvincesAndCities = __importStar(require("./data/province-and-citie
 exports.useBank = __importStar(require("./hooks/useBank.js"));
 exports.useNationalId = __importStar(require("./hooks/useNationalId.js"));
 exports.useIranProvincesAndCities = __importStar(require("./hooks/useIranProvincesAndCities.js"));
+__exportStar(require("./classes/Bank.js"), exports);
+__exportStar(require("./classes/NationalId.js"), exports);
+__exportStar(require("./classes/Province.js"), exports);
+__exportStar(require("./data/bank/index.js"), exports);
+__exportStar(require("./data/national-id/index.js"), exports);
+__exportStar(require("./data/province-and-cities/index.js"), exports);
+__exportStar(require("./hooks/useBank.js"), exports);
+__exportStar(require("./hooks/useNationalId.js"), exports);
+__exportStar(require("./hooks/useIranProvincesAndCities.js"), exports);

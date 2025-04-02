@@ -3,7 +3,7 @@ name: Publish to npm
 on:
     push:
         branches:
-            - master # Runs when pushing to master
+            - master
 
 jobs:
     publish:
@@ -18,18 +18,14 @@ jobs:
               with:
                   node-version: 20
                   registry-url: https://registry.npmjs.org/
-                  cache: "pnpm" # Enables caching for pnpm
-
-            - name: Enable pnpm
-              run: corepack enable
 
             - name: Install dependencies
-              run: pnpm install --frozen-lockfile
+              run: npm ci
 
-            - name: Build package (if needed)
-              run: pnpm run build # Remove if not required
+            - name: Build package
+              run: npm run build
 
             - name: Publish to npm
-              run: pnpm publish --access public
+              run: npm publish --access public
               env:
                   NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

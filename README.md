@@ -8,7 +8,7 @@
 
 ## Installation
 
-Install the library via npm or yarn:
+Install the library via npm or yarn or pnpm:
 
 ```bash
 npm install iran-lib

@@ -170,3 +170,7 @@ This project is licensed under the [MIT License](./LICENSE).
 ## Support
 
 If you encounter any issues or have questions, feel free to open an issue on [GitHub](https://github.com/faeztgh/iran-lib).
+
+[Support](https://www.faez.pro/support?utm_source=iranlib_github_repo)
+
+[Author](https://www.faez.pro?utm_source=iranlib_github_repo)
